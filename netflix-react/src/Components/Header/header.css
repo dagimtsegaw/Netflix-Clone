@@ -1,0 +1,41 @@
+.header_outer_container {
+  position: sticky;
+  top: 0;
+  background-color: rgb(20, 20, 20);
+  /* background-color: transparent; */
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  z-index: 1;
+}
+.header_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_left ul {
+  width: 140%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+.header_right ul {
+  width: 150%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+.header_right ul li {
+  color: white; /* Ensure the icons are visible on a dark background */
+  font-size: 24px; /* Increase the size for better visibility */
+}
