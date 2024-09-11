@@ -3,6 +3,8 @@
   color: grey;
   display: flex;
   justify-content: center;
+  /* position: sticky;
+  bottom: 0; */
 }
 .footer_container {
   width: 60%;
