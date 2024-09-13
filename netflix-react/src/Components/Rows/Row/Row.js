@@ -37,6 +37,9 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       );
     }
   };
+  const handleCloseTrailer = () => {
+    setTrailerUrl(""); // Close the trailer by resetting trailerUrl
+  };
   const opts = {
     height: "390",
     width: " 100%",
@@ -61,7 +64,14 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
         ))}
       </div>
       <div style={{ padding: "40px" }}>
-        {trailerUrl && <Youtube videoId={trailerUrl} opts={opts} />}
+        {trailerUrl && (
+          <div className="trailer_container">
+            <Youtube videoId={trailerUrl} opts={opts} />
+            <button className="close_button" onClick={handleCloseTrailer}>
+              X
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

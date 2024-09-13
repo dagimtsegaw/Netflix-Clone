@@ -12,9 +12,11 @@
 .footer_icons {
   width: 12px;
   color: white;
-  margin-left: 10px;
+  /* margin-left: 20px; */
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .footer_data {
   display: flex;

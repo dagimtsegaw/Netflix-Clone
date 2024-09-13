@@ -7,11 +7,6 @@ const Footer = () => {
   return (
     <div className="footer_outer_container">
       <div className="footer_container">
-        <div className="footer_icons">
-          <FacebookOutlinedIcon />
-          <InstagramIcon />
-          <YouTubeIcon />
-        </div>
         <div className="footer_data">
           <div>
             <ul>
@@ -44,6 +39,12 @@ const Footer = () => {
         </div>
         <div className="service_code">
           <p>Service Code</p>
+        </div>
+        <div>Social Media</div>
+        <div className="footer_icons">
+          <FacebookOutlinedIcon />
+          <InstagramIcon />
+          <YouTubeIcon />
         </div>
         <div className="copy_write">&copy;1997-2024 Netflix, Inc.</div>
       </div>
